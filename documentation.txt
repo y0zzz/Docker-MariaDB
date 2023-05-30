@@ -1,0 +1,15 @@
+1. Vad gör "ADD employees.sql /docker-entrypoint-initdb.d/employees.sql" i er Dockerfile? 
+
+Svar: Kommandot ADD employees.sql /docker-entrypoint-initdb.d/employees.sql kopierar filen employees.sql
+ från den nuvarande katalogen och lägger till den i docker-entrypoint-initdb.d katalogen i Docker-containern
+  som skapas från Dockerfilen.
+
+2: Hur löste ni delen "Skapa/läs data från databasen med mariadb.py". Skriv kortfattat nedan. 
+
+Svar: Jag behövde ändra mariadb filen jag behövde lägga till port 3307 på rad 12 sen behövde jag ändra rad 21 
+från cursor commit till connection commit och jag behövde också lägga till mitt lösenord på rad 9. 
+
+3: Stötte ni på andra problem och hur löste ni dessa? Svara nedan.
+
+Svar: jag hade problem att ladda ner filen från canvas i och med att jag har macbook så jag behövde ladda ner unarchiver för att
+kunna ladda ner filen och påbörja min uppgift. 
